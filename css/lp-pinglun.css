@@ -1,0 +1,272 @@
+*{
+	box-sizing:border-box;
+}
+html,body{
+	height:100%;
+}
+#header {
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height:0.88rem;
+	background:#171717;
+}
+#footer {
+	position: absolute;
+	z-index: 2;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0.88rem;
+	background:#171717;
+}
+#wrapper {
+	position: absolute;
+	z-index: 1;
+	top: 0.88rem;
+	bottom:0.88rem;
+	left: 0;
+	width: 100%;
+	background:#f2f4f4;
+	overflow: hidden;
+}
+#scroller {
+	position:absolute;
+	z-index: 1;
+	width: 100%;
+}
+/*顶部*/
+.lp-hall{
+	width:100%;
+	height:0.88rem;
+	background:#171717;
+}
+.lp-hall a{
+	height:0.88rem;
+	float:left;
+	padding:0 0.2rem 0 0.2rem;
+	box-sizing:border-box;
+	overflow:hidden;
+}
+.lp-hall a:nth-child(1){
+	margin-left:0.04rem;
+}
+.lp-hall a:nth-child(2){
+	margin-left:1.99rem;
+}
+.lp-hall a:nth-child(3){
+	margin-left:1.99rem;
+}
+.lp-hall a .lp-return{
+	width:0.4rem;
+	float:left;
+	margin-top:0.22rem;
+}
+.lp-hall a .lp-titlee{
+	width:1.43rem;
+	float:left;
+	margin-top:0.18rem;
+}
+.lp-hall a .lp-share{
+	width:0.4rem;
+	float:left;
+	margin-top:0.22rem;
+	margin-right:-0.1rem;
+}
+/*赞*/
+.lp-zan{
+	height:1.66rem;
+	width:7.02rem;
+	border-radius:0.1rem;
+	background:#f9fafa;
+	padding:0.16rem 0.2rem 0 0.2rem;
+	box-sizing:border-box;
+	margin:0 auto;
+	margin-top:0.2rem;
+}
+.lp-zan1 {
+	overflow:hidden;
+}
+.lp-zan1-img1{
+	float:left;
+	margin-top:0.08rem;
+}
+.lp-zan1-span1{
+	font-size:0.28rem;
+	color:#000;
+	float:left;
+	margin-left:0.24rem;
+}
+.lp-zan1-span2{
+	font-size:0.28rem;
+	color:#8f8f8f;
+	float:left;
+}
+.lp-zan1-img2{
+	float:right;
+	width:0.14rem;
+}
+.lp-zan2{
+	margin-top:0.32rem;
+}
+.lp-zan2 img{
+	float:left;
+	width:0.6rem;
+	margin-left:0.1rem;
+}
+/*评论*/
+.lp-recommond{
+	width:7.02rem;
+	border-radius:0.1rem;
+	background:#f9fafa;
+	padding:0.16rem 0.2rem 0 0.2rem;
+	box-sizing:border-box;
+	margin:0 auto;
+	margin-top:0.2rem;
+}
+.lp-re1{
+	width:100%;
+	overflow:hidden;
+}
+.lp-zan1-img1{
+	float:left;
+	margin-top:0.08rem;
+}
+.lp-zan1-span1{
+	font-size:0.28rem;
+	color:#000;
+	float:left;
+	margin-left:0.24rem;
+}
+.lp-zan1-span2{
+	font-size:0.28rem;
+	color:#8f8f8f;
+	float:left;
+}
+.lp-re2{
+	width:100%;
+	overflow:hidden;
+	margin-top:0.38rem;
+}
+.lp-re2 .lp-re2-line1{
+	height:0.6rem;
+}
+.lp-re2 .lp-re2-line1 img{
+	width:0.6rem;
+	float:left;
+}
+.lp-re2 .lp-re2-line1 span:nth-child(2){
+	font-size:0.28rem;
+	color:#000;
+	float:left;
+	margin-left:0.08rem;
+}
+.lp-re2 .lp-re2-line1 span:nth-child(3){
+	font-size:0.17rem;
+	color:#727272;
+	float:left;
+	margin-left:0.08rem;
+}
+.lp-re2 .lp-re2-line1 span:nth-child(4){
+	font-size:0.13rem;
+	color:#6a6a6a;
+	float:right;
+}
+.lp-re2 .lp-re2-line2{
+	font-size:0.22rem;
+	color:#353535;
+	margin-top:0.2rem;
+	overflow:hidden;
+}
+.lp-re2 .lp-re2-line2 span{
+	float:left;
+}
+.lp-re2 .lp-re2-line2 img{
+	float:left;
+	width:0.43rem;
+}
+.lp-re2 .lp-re2-line3{
+	width:5.81rem;
+	border-radius:0.1rem;
+	background:#dbdbdb;
+	padding:0.16rem 0.2rem 0.16rem 0.2rem;
+	box-sizing:border-box;
+	margin:0 auto;
+	margin-top:0.2rem;
+	font-size:0.22rem;
+	color:#353535;
+	overflow:hidden;
+}
+.lp-re2 .lp-re2-line3 span{
+	float:left;
+}
+.lp-re2 .lp-re2-line3 img{
+	float:left;
+	width:0.43rem;
+}
+/*输入框*/
+form{
+	width:7.02rem;
+	height:0.88rem;
+	margin:0 auto;
+	padding-top:0.2rem;
+	box-sizing:border-box;
+}
+form input{
+	outline:none;
+	border:none;
+	border:0.04rem solid #d7d7d7;
+	border-radius:0.1rem;
+	padding-left:0.1rem;
+	box-sizing:border-box;
+	width:6.35rem;
+	height:0.48rem;
+	float:left;
+}
+form span{
+	font-size:0.22rem;
+	color:#2f2f2f;
+	float:left;
+	margin-left:0.18rem;
+	margin-top:0.08rem;
+}
+/*底部*/
+.lp-fall{
+	width:100%;
+	height:0.88rem;
+	background:#171717;
+}
+.lp-fall a{
+	height:0.88rem;
+	float:left;
+	padding:0 0.2rem 0 0.2rem;
+	box-sizing:border-box;
+	overflow:hidden;
+}
+.lp-fall a:nth-child(1){
+	margin-left:0.59rem;
+}
+.lp-fall a:nth-child(2){
+	margin-left:1.96rem;
+}
+.lp-fall a:nth-child(3){
+	margin-left:1.98rem;
+}
+.lp-fall a .lp-return{
+	width:0.43rem;
+	float:left;
+	margin-top:0.27rem;
+}
+.lp-fall a .lp-titlee{
+	width:0.36rem;
+	float:left;
+	margin-top:0.27rem;
+}
+.lp-fall a .lp-share{
+	width:0.39rem;
+	float:left;
+	margin-top:0.27rem;
+	margin-right:-0.1rem;
+}
