@@ -1,0 +1,294 @@
+@font-face{
+  font-family: '苹方';
+  src:url(../font/PingFang Regular.ttf);
+}
+@font-face{
+  font-family: '三番';
+  src:url(../font/SF Grandezza Medium.ttf);
+}
+/** {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}*/
+
+.ly-top {
+  width: 100%;
+  height: 0.88rem;
+  background: #202020;
+  position: absolute;
+  top:0;
+  left:0;
+}
+
+.ly-top .ly-zuopin {
+  width: 1.2rem;
+  height: 100%;
+  float: left;
+  padding-left: 0.15rem;
+  position: relative;
+}
+
+.ly-top .ly-zuopin .ly-zp {
+  width:0.94rem;
+  height: 0.44rem;
+  /*border: 0.01rem solid #000;*/
+  box-sizing: border-box;
+  border-radius: 0.22rem;
+  /*overflow: hidden;*/
+  position: absolute;
+  left:50%;
+  top:50%;
+  margin-top:-0.22rem;
+  margin-left:-0.47rem;
+  background-color:rgba(255,255,255,0.1);
+}
+
+.ly-top .ly-zuopin .ly-zp p {
+/*  width: 0.6rem;
+  height: 0.44rem;*/
+  font-size: 0.2rem;
+  font-family: '苹方';
+  color: white;
+  line-height: 0.42rem;
+  float: left;
+  padding-left:0.1rem;
+  padding-right:0.1rem;
+}
+.ly-top .ly-zuopin .ly-zp span {
+  /*width: 0.6rem;
+  height: 0.44rem;*/
+  font-size: 0.26rem;
+  color: white;
+  font-family: '宋体';
+  line-height: 0.42rem;
+  float: left;
+  transform: rotate(90deg);
+}
+/*.ly-top .ly-zuopin .ly-zp > img {
+  float: left;
+  width: 0.36rem;
+  padding-top: 0.15rem;
+}*/
+
+.ly-top > img.ly-so {
+  position: absolute;
+  left: 0.89rem;
+  top: 0.22rem;
+  width: 0.45rem;
+  height: 0.4rem;
+}
+
+.ly-top > img.ly-vioce {
+  width: 0.37rem;
+  height: 0.4rem;
+  position: absolute;
+  left: 5.7rem;
+  top: 0.22rem;
+}
+
+.ly-top .ly-select {
+  width: 5.24rem;
+  height: 100%;
+  float: left;
+  line-height: 0.2rem;
+}
+
+.ly-top .ly-select input {
+  font-size: 0.2rem;
+  font-family: '苹方';
+  width: 100%;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  border-radius: 0.2rem;
+  background: #202020;
+  border: 0.01rem solid #fff;
+  text-align: left;
+  outline: 0;
+  color:rgb(255,255,255);
+  box-sizing: border-box;
+  padding-left:0.6rem;
+}
+
+.ly-top .ly-select input::-webkit-input-placeholder {
+  color:rgb(255,255,255);
+}
+.ly-top .ly-return {
+  width: 0.85rem;
+  height: 100%;
+  float: left;
+  line-height: 0;
+}
+
+.ly-top .ly-return img {
+  width: 100%;
+  height: 100%;
+}
+#wrapper{
+  position: absolute;
+  top:0.88rem;
+  left:0;
+  right:0;
+  bottom:0;
+  /*bottom:0.88rem;*/
+  overflow: hidden;
+}
+.ly-middle {
+  /*padding-top: 0.88rem;*/
+  width: 100%;
+  height: auto;
+  background: #F2F4F2;
+  /*overflow: hidden;*/
+}
+
+.ly-middle .ly-look {
+  width: 7.2rem;
+  /*height: 9.95rem;*/
+  margin: 0.1rem auto;
+  overflow: hidden;
+}
+
+.ly-middle .ly-look .ly-look1 {
+  width: 48%;
+  margin-right: 2%;
+  /*height: 5.4rem;*/
+  float: left;
+  background: white;
+  margin-bottom:0.2rem;
+  border-radius: 0.1rem;
+  box-shadow: 0 0.02rem 0.03rem rgba(0,0,0,0.3);
+}
+.ly-middle .ly-look .ly-look1 a {
+  /*width: 100%;*/
+  display: block;
+}
+.ly-middle .ly-look .ly-look1 img {
+  width: 100%;
+  display: block;
+}
+
+.ly-middle .ly-look .ly-look1 .ly-like {
+  box-sizing: border-box;
+  width: 100%;
+  height: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.ly-middle .ly-look .ly-look1 .ly-like .ly-cellect1,.ly-middle .ly-look .ly-look1 .ly-like .ly-cellect2 {
+  width: 0.94rem;
+  height: 0.32rem;
+  border: 0.01rem solid #E2E0DC;
+  box-sizing: border-box;
+  float: left;
+  border-radius: 0.5rem;
+  margin-left: 0.2rem;
+}
+
+.ly-middle .ly-look .ly-look1 .ly-like img {
+  width: 30%;
+  display: block;
+  line-height: 0.32rem;
+  padding-left: 0.02rem;
+  padding-right: 0.02rem;
+  padding-top: 0.04rem;
+  float: left;
+}
+
+.ly-middle .ly-look .ly-look1 .ly-like p {
+  /*width: 50%;*/
+  font-size: 0.16rem;
+  line-height: 0.32rem;
+  float: left;
+}
+
+.ly-middle .ly-allsee {
+  width: 100%;
+/*  height: 0.9rem;
+  line-height: 0.9rem;*/
+}
+
+.ly-middle .ly-allsee img {
+  width: 100%;
+  display: block;
+}
+
+.ly-middle .ly-hot {
+  width: 100%;
+  height: 1.68rem;
+  padding-top: 0.2rem;
+}
+
+.ly-middle .ly-hot a {
+  float: left;
+  background: white;
+  text-align: center;
+  line-height: 0.56rem;
+  margin: 0.1rem 0.15rem;
+  color:rgb(0,0,0);
+  font-size: 0.2rem;
+  padding:0 0.3rem;
+}
+
+/*.ly-middle .ly-hot a.hot1 {
+  width: 1.25rem;
+  height: 0.56rem;
+  border-radius: 0.1rem;
+}
+
+.ly-middle .ly-hot a.hot2 {
+  width: 1.65rem;
+  height: 0.56rem;
+  border-radius: 0.1rem;
+}
+
+.ly-middle .ly-hot a.hot3 {
+  width: 1.2rem;
+  height: 0.56rem;
+  border-radius: 0.1rem;
+}*/
+.zl-swiper-container1{
+  width:100%;
+  /*height:2.2rem;*/
+}
+.ly-middle .ly-project {
+  width: 12rem;
+  /*height: 2.2rem;*/
+}
+
+.ly-middle .ly-project div {
+  width: 1.8rem;
+  /*height: 2.2rem;*/
+  float: left;
+  background: #F2F4F2;
+}
+
+.ly-middle .ly-project div a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.ly-middle .ly-project div img {
+  width: 100%;
+}
+
+.ly-middle .ly-fenlei {
+  width: 100%;
+  /*height: 1.2rem;*/
+}
+
+.ly-middle .ly-fenlei img {
+  width: 100%;
+  display: block;
+}
+
+.ly-middle .ly-hotci {
+  width: 100%;
+/*  height: 0.83rem;
+  line-height: 0.83rem;*/
+}
+
+.ly-middle .ly-hotci img {
+  display: block;
+  width: 100%;
+}
