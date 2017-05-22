@@ -1,0 +1,142 @@
+@media screen and (min-width: 320px) {
+    html {
+        font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+    html {
+        font-size: 48px; } }
+
+@media screen and (min-width: 375px) {
+    html {
+        font-size: 50px; } }
+
+@media screen and (min-width: 412px) {
+    html {
+        font-size: 54.93333px; } }
+
+@media screen and (min-width: 414px) {
+    html {
+        font-size: 55.2px; } }
+
+@media screen and (min-width: 750px) {
+    html {
+        font-size: 100px; } }
+
+.package{
+    width: 100%;
+    height: 12.94rem;
+    background: url("../img/lp/dbj.png")no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.package input{
+    border: 0;
+    font-size: 0.24rem;
+    outline:none;
+}
+.package input::-webkit-input-placeholder{
+    color: #ddd;
+}
+.package #user{
+    position: absolute;
+    top: 5.5rem;
+    left: 2.4rem;
+}
+.package #pass{
+    position: absolute;
+    top: 6.95rem;
+    left: 2.4rem;
+}
+.package #passer{
+    position: absolute;
+    top: 8.53rem;
+    left: 2.4rem;
+}
+.package .zhuce{
+    width: 3.96rem;
+    height: 0.88rem;
+    position: absolute;
+    bottom: 1.97rem;
+    left: 2.1rem;
+}
+.package .zhuce #bu{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("../img/lp/zc.png")no-repeat;
+    background-size: cover;
+    position: absolute;
+    opacity: 1;
+}
+.package .zhuce #deng{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("../img/lp/zc1.png")no-repeat;
+    background-size: cover;
+    opacity: 0;
+}
+.package .shiyong{
+    width: 3.2rem;
+    height: 0.4rem;
+    position: absolute;
+    top: 4.4rem;
+    left: 1.85rem;
+}
+.package .shiyong #shiyong{
+    display: block;
+    width: 2.69rem;
+    height: 100%;
+    background: url("../img/lp/shiyong.png")no-repeat;
+    background-size: cover;
+    position: absolute;
+    opacity: 0;
+}
+.package .shiyong #mima{
+    display: block;
+    width: 3.13rem;
+    height: 100%;
+    background: url("../img/lp/mima.png")no-repeat;
+    background-size: cover;
+    opacity: 0;
+}
+.package .xian{
+    width: 4.61rem;
+    height: 0.07rem;
+    background: url("../img/lp/xian.png")no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 7.6rem;
+    left: 1.85rem;
+    opacity:0;
+}
+.package .xian1{
+    width: 4.61rem;
+    height: 0.07rem;
+    background: url("../img/lp/xian.png")no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 9.25rem;
+    left: 1.85rem;
+    opacity:0;
+}
+.package .xian .lian{
+    width: 0.56rem;
+    height: 0.56rem;
+    background: url("../img/lp/lian.png")no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: -6px;
+    margin-top: -0.24rem;
+}
+.package .xian1 .lian{
+    width: 0.56rem;
+    height: 0.56rem;
+    background: url("../img/lp/lian.png")no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: -6px;
+    margin-top: -0.24rem;
+}

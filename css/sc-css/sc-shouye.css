@@ -83,11 +83,13 @@
     justify-content: space-between;
     align-items: center; }
     .top .top-top .left {
+      display: block;
       width: 0.46rem;
       height: 0.42rem;
       background: url("../../img/sc/t-left.png") no-repeat;
       background-size: cover; }
     .top .top-top .right {
+      display: block;
       width: 0.46rem;
       height: 0.42rem;
       background: url("../../img/sc/t-right.png") no-repeat;
