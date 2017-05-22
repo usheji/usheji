@@ -40,4 +40,13 @@ $(function(){
 	$('.ly-return').on('touchstart',function(){
 		window.history.back();
 	})
+// 搜索框跳转
+	$('.ly-select>input').on('touchstart',function(){
+		// location.href=''
+		location.href='zl-sousuoz.html'
+	})
+// 作品的旋转小三角
+	$('.ly-zp').on('touchstart',function(){
+		$(this).children('span').toggleClass('zl-arrow')
+	})
 })

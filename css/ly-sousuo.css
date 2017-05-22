@@ -6,12 +6,6 @@
   font-family: '三番';
   src:url(../font/SF Grandezza Medium.ttf);
 }
-/** {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  text-decoration: none;
-}*/
 
 .ly-top {
   width: 100%;
@@ -33,10 +27,8 @@
 .ly-top .ly-zuopin .ly-zp {
   width:0.94rem;
   height: 0.44rem;
-  /*border: 0.01rem solid #000;*/
   box-sizing: border-box;
   border-radius: 0.22rem;
-  /*overflow: hidden;*/
   position: absolute;
   left:50%;
   top:50%;
@@ -46,8 +38,7 @@
 }
 
 .ly-top .ly-zuopin .ly-zp p {
-/*  width: 0.6rem;
-  height: 0.44rem;*/
+
   font-size: 0.2rem;
   font-family: '苹方';
   color: white;
@@ -57,20 +48,18 @@
   padding-right:0.1rem;
 }
 .ly-top .ly-zuopin .ly-zp span {
-  /*width: 0.6rem;
-  height: 0.44rem;*/
+
   font-size: 0.26rem;
   color: white;
   font-family: '宋体';
   line-height: 0.42rem;
   float: left;
   transform: rotate(90deg);
+  transition:transform 0.3s;
 }
-/*.ly-top .ly-zuopin .ly-zp > img {
-  float: left;
-  width: 0.36rem;
-  padding-top: 0.15rem;
-}*/
+.ly-top .ly-zuopin .ly-zp span.zl-arrow {
+  transform: rotate(-90deg);
+}
 
 .ly-top > img.ly-so {
   position: absolute;
@@ -131,20 +120,16 @@
   left:0;
   right:0;
   bottom:0;
-  /*bottom:0.88rem;*/
   overflow: hidden;
 }
 .ly-middle {
-  /*padding-top: 0.88rem;*/
   width: 100%;
   height: auto;
   background: #F2F4F2;
-  /*overflow: hidden;*/
 }
 
 .ly-middle .ly-look {
   width: 7.2rem;
-  /*height: 9.95rem;*/
   margin: 0.1rem auto;
   overflow: hidden;
 }
@@ -152,7 +137,6 @@
 .ly-middle .ly-look .ly-look1 {
   width: 48%;
   margin-right: 2%;
-  /*height: 5.4rem;*/
   float: left;
   background: white;
   margin-bottom:0.2rem;
@@ -160,7 +144,6 @@
   box-shadow: 0 0.02rem 0.03rem rgba(0,0,0,0.3);
 }
 .ly-middle .ly-look .ly-look1 a {
-  /*width: 100%;*/
   display: block;
 }
 .ly-middle .ly-look .ly-look1 img {
@@ -196,7 +179,6 @@
 }
 
 .ly-middle .ly-look .ly-look1 .ly-like p {
-  /*width: 50%;*/
   font-size: 0.16rem;
   line-height: 0.32rem;
   float: left;
@@ -204,8 +186,6 @@
 
 .ly-middle .ly-allsee {
   width: 100%;
-/*  height: 0.9rem;
-  line-height: 0.9rem;*/
 }
 
 .ly-middle .ly-allsee img {
@@ -230,35 +210,15 @@
   padding:0 0.3rem;
 }
 
-/*.ly-middle .ly-hot a.hot1 {
-  width: 1.25rem;
-  height: 0.56rem;
-  border-radius: 0.1rem;
-}
-
-.ly-middle .ly-hot a.hot2 {
-  width: 1.65rem;
-  height: 0.56rem;
-  border-radius: 0.1rem;
-}
-
-.ly-middle .ly-hot a.hot3 {
-  width: 1.2rem;
-  height: 0.56rem;
-  border-radius: 0.1rem;
-}*/
 .zl-swiper-container1{
   width:100%;
-  /*height:2.2rem;*/
 }
 .ly-middle .ly-project {
   width: 12rem;
-  /*height: 2.2rem;*/
 }
 
 .ly-middle .ly-project div {
   width: 1.8rem;
-  /*height: 2.2rem;*/
   float: left;
   background: #F2F4F2;
 }
@@ -267,14 +227,30 @@
   display: block;
   width: 100%;
   height: 100%;
+  text-align: center;
+  padding:0.2rem 0;
 }
-.ly-middle .ly-project div img {
+.ly-middle .ly-project div a>h6 {
+  font-family: '苹方';
+  font-size: 0.24rem;
+  color:rgb(0,0,0);
+  line-height: 0.3rem;
+  display: none;
+}
+.ly-middle .ly-project div a>p {
+  font-family: '三番';
+  font-size: 0.14rem;
+  color:rgb(165,165,165);
+  text-transform: uppercase;
+  line-height: 0.3rem;
+  display: none;
+}
+.ly-middle .ly-project div a>img {
   width: 100%;
 }
 
 .ly-middle .ly-fenlei {
   width: 100%;
-  /*height: 1.2rem;*/
 }
 
 .ly-middle .ly-fenlei img {
@@ -284,8 +260,6 @@
 
 .ly-middle .ly-hotci {
   width: 100%;
-/*  height: 0.83rem;
-  line-height: 0.83rem;*/
 }
 
 .ly-middle .ly-hotci img {
