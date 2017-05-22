@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/sc-css/sc-shouye.css">
     <script src="../js/zepto.min.js"></script>
+    <script src="../js/iscroll.js"></script>
     <script src="../js/sc-shouye.js"></script>
 </head>
 <style>
@@ -18,7 +19,6 @@
         height: 100%;
     }
     body {
-        background: #000;
         font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
         font-size: 14px;
         color:#000;
@@ -54,7 +54,7 @@
 </style>
 <body>
 <div class="bao">
-    <div class="top">
+    <div class="top" id="header">
         <div class="top-zhe1"></div>
         <div class="top-top">
             <div class="left"></div>
@@ -62,312 +62,322 @@
             <div class="right"></div>
         </div>
     </div>
-    <div class="ban">
-        <div class="banner swiper-container gallery-top">
-            <div class="swiper-wrapper">
-                <div class="b-tu swiper-slide">
-                    <img src="../img/sc/b-tu1.png" alt="">
-                </div>
-                <div class="b-tu swiper-slide">
-                    <img src="../img/sc/b-tu2.png" alt="">
-                </div>
-                <div class="b-tu swiper-slide">
-                    <img src="../img/sc/bj.png" alt="">
-                </div>
-                <div class="b-tu swiper-slide">
-                    <img src="../img/sc/b-tu.png" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="banner1 swiper-container gallery-thumbs">
-            <div class="swiper-wrapper">
-                <div class="b-tu1 swiper-slide">
-                    <img src="../img/sc/b-tu1.png" alt="">
-                </div>
-                <div class="b-tu1 swiper-slide">
-                    <img src="../img/sc/b-tu2.png" alt="">
-                </div>
-                <div class="b-tu1 swiper-slide">
-                    <img src="../img/sc/b-tu3.png" alt="">
-                </div>
-                <div class="b-tu1 swiper-slide">
-                    <img src="../img/sc/b-tu.png" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="swiper-pagination swiper-pagination-white"></div>
-        <div class="dian"></div>
-    </div>
-    <div class="jiaohu">
-        <div class="jh">
-            <div class="jh-tu jh-tu1"></div>
-            <p class="p1">交互·设计</p>
-            <p class="p2">Interaction design</p>
-        </div>
-        <div class="tb">
-            <div class="jh-tu jh-tu2"></div>
-            <p class="p1">图标·设计</p>
-            <p class="p2">Icon design</p>
-        </div>
-        <div class="jm">
-            <div class="jh-tu jh-tu3"></div>
-            <p class="p1">界面·设计</p>
-            <p class="p2">Interaction design</p>
-        </div>
-        <div class="wy">
-            <div class="jh-tu jh-tu4"></div>
-            <p class="p1">网页·设计</p>
-            <p class="p2">Web design</p>
-        </div>
-    </div>
-    <div class="remen">
-        <div class="tu"></div>
-        <a href="javascript:;"></a>
-    </div>
-    <div class="tuijian">
-        <div class="r-tuijian">
-            <div class="t-1">
-                <img src="../img/sc/tuijian.png" alt="">
-            </div>
-            <div class="ziti">
-                <div class="zi">
-                    <a href="javascript:;"></a>
-                    <span><strong>Conction</strong>Baide</span>
-                </div>
-                <div class="xian">
-                    <div class="dian"></div>
-                    <div class="dian1"></div>
-                </div>
-                <div class="xing">
-                    <p>这一次是关于置换的尝试</p>
-                    <div class="xin"></div>
-                    <div class="zan">
-                        <div class="zan1">
-                            <a href="javascript:;"></a>
-                            <span>26103</span>
+    <div id="wrapper">
+        <div id="scroller">
+            <!--轮播-->
+            <div class="ban">
+                <div class="banner swiper-container gallery-top">
+                    <div class="swiper-wrapper">
+                        <div class="b-tu swiper-slide">
+                            <img src="../img/sc/shouye1.png" alt="">
                         </div>
-                        <div class="zan2">
+                        <div class="b-tu swiper-slide">
+                            <img src="../img/sc/shouye.png" alt="">
+                        </div>
+                        <div class="b-tu swiper-slide">
+                            <img src="../img/sc/shouye3.png" alt="">
+                        </div>
+                        <div class="b-tu swiper-slide">
+                            <img src="../img/sc/shouye2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="banner1 swiper-container gallery-thumbs">
+                    <div class="swiper-wrapper">
+                        <div class="b-tu1 swiper-slide">
+                            <img src="../img/sc/xiao.png" alt="">
+                        </div>
+                        <div class="b-tu1 swiper-slide">
+                            <img src="../img/sc/xiao1.png" alt="">
+                        </div>
+                        <div class="b-tu1 swiper-slide">
+                            <img src="../img/sc/b-tu3.png" alt="">
+                        </div>
+                        <div class="b-tu1 swiper-slide">
+                            <img src="../img/sc/xiao2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination swiper-pagination-white"></div>
+                <!--<div class="dian"></div>-->
+            </div>
+            <!--交互-->
+            <div class="jiaohu">
+                <div class="jh">
+                    <div class="jh-tu jh-tu1"></div>
+                    <p class="p1">交互·设计</p>
+                    <p class="p2">Interaction design</p>
+                </div>
+                <div class="tb">
+                    <div class="jh-tu jh-tu2"></div>
+                    <p class="p1">图标·设计</p>
+                    <p class="p2">Icon design</p>
+                </div>
+                <div class="jm">
+                    <div class="jh-tu jh-tu3"></div>
+                    <p class="p1">界面·设计</p>
+                    <p class="p2">Interaction design</p>
+                </div>
+                <div class="wy">
+                    <div class="jh-tu jh-tu4"></div>
+                    <p class="p1">网页·设计</p>
+                    <p class="p2">Web design</p>
+                </div>
+            </div>
+            <!--热门推荐-->
+            <div class="remen">
+                <div class="tu"></div>
+                <a href="javascript:;"></a>
+            </div>
+            <div class="tuijian">
+                <div class="r-tuijian">
+                    <div class="t-1">
+                        <img src="../img/sc/tuijian.png" alt="">
+                    </div>
+                    <div class="ziti">
+                        <div class="zi">
                             <a href="javascript:;"></a>
-                            <span>26103</span>
+                            <span><strong>Conction</strong>Baide</span>
+                        </div>
+                        <div class="xian">
+                            <div class="dian"></div>
+                            <div class="dian1"></div>
+                        </div>
+                        <div class="xing">
+                            <p>这一次是关于置换的尝试</p>
+                            <div class="xin"></div>
+                            <div class="zan">
+                                <div class="zan1">
+                                    <a href="javascript:;"></a>
+                                    <span>26103</span>
+                                </div>
+                                <div class="zan2">
+                                    <a href="javascript:;"></a>
+                                    <span>26103</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="xian">
+                            <div class="dian"></div>
+                            <div class="dian1"></div>
+                        </div>
+                        <div class="imag"></div>
+                    </div>
+
+                </div>
+                <div class="r-tuijian">
+                    <div class="t-1">
+                        <img src="../img/sc/tuijian1.png" alt="">
+                    </div>
+                    <div class="ziti">
+                        <div class="zi">
+                            <a href="javascript:;"></a>
+                            <span><strong>Baide</strong>Conction</span>
+                        </div>
+                        <div class="xian">
+                            <div class="dian"></div>
+                            <div class="dian1"></div>
+                        </div>
+                        <div class="xing">
+                            <p>如何在PS中创建一个3D...</p>
+                            <div class="xin"></div>
+                            <div class="zan">
+                                <div class="zan1">
+                                    <a href="javascript:;"></a>
+                                    <span>26103</span>
+                                </div>
+                                <div class="zan2">
+                                    <a href="javascript:;"></a>
+                                    <span>26103</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="xian">
+                            <div class="dian"></div>
+                            <div class="dian1"></div>
+                        </div>
+                        <div class="imag"></div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="tuijian">
+                <div class="r-tuijian">
+                    <div class="t-1">
+                        <img src="../img/sc/tuijian2.png" alt="" id="imag">
+                    </div>
+                    <div class="ziti">
+                        <div class="zi">
+                            <a href="javascript:;"></a>
+                            <span><strong>Designs</strong>Print</span>
+                        </div>
+                        <div class="xian">
+                            <div class="dian"></div>
+                            <div class="dian1"></div>
+                        </div>
+                        <div class="xing">
+                            <p>传统产品迭代过程,通常...</p>
+                            <div class="xin"></div>
+                            <div class="zan">
+                                <div class="zan1">
+                                    <a href="javascript:;"></a>
+                                    <span>26103</span>
+                                </div>
+                                <div class="zan2">
+                                    <a href="javascript:;"></a>
+                                    <span>26103</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="xian">
+                            <div class="dian"></div>
+                            <div class="dian1"></div>
+                        </div>
+                        <div class="imag"></div>
+                    </div>
+
+                </div>
+                <div class="r-tuijian">
+                    <div class="t-1">
+                        <img src="../img/sc/tuijian3.png" alt="" id="image">
+                    </div>
+                    <div class="ziti">
+                        <div class="zi">
+                            <a href="javascript:;"></a>
+                            <span><strong>Reindeer</strong>Home</span>
+                        </div>
+                        <div class="xian">
+                            <div class="dian"></div>
+                            <div class="dian1"></div>
+                        </div>
+                        <div class="xing">
+                            <p>设计构思是一个以旅游观...</p>
+                            <div class="xin"></div>
+                            <div class="zan">
+                                <div class="zan1">
+                                    <a href="javascript:;"></a>
+                                    <span>26103</span>
+                                </div>
+                                <div class="zan2">
+                                    <a href="javascript:;"></a>
+                                    <span>26103</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="xian">
+                            <div class="dian"></div>
+                            <div class="dian1"></div>
+                        </div>
+                        <div class="imag"></div>
+                    </div>
+
+                </div>
+            </div>
+            <!--教程-->
+            <div class="jiaocheng">
+                <div class="tu"></div>
+                <a href="javascript:;"></a>
+            </div>
+            <div class="sc-play">
+                <div class="play-top">
+                    <a href="javascript:;"></a>
+                    <div class="play-right">
+                        <div class="left-left">
+                            <p>lind.<strong>maral</strong></p>
+                            <div class="xian"></div>
+                            <p>色彩游戏-双重影像的三种玩法</p>
+                        </div>
+                        <div class="left-right">
+                            <div class="tu"></div>
+                            <div class="zan">
+                                <div class="zan1">
+                                    <a href="javascript:;"></a>
+                                    <span>1223</span>
+                                </div>
+                                <div class="zan2">
+                                    <a href="javascript:;"></a>
+                                    <span>4326</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="xian">
-                    <div class="dian"></div>
-                    <div class="dian1"></div>
+                    <div class="left"></div>
+                    <div class="right"></div>
                 </div>
-                <div class="imag"></div>
-            </div>
-
-        </div>
-        <div class="r-tuijian">
-            <div class="t-1">
-                <img src="../img/sc/tuijian1.png" alt="">
-            </div>
-            <div class="ziti">
-                <div class="zi">
-                    <a href="javascript:;"></a>
-                    <span><strong>Baide</strong>Conction</span>
-                </div>
-                <div class="xian">
-                    <div class="dian"></div>
-                    <div class="dian1"></div>
-                </div>
-                <div class="xing">
-                    <p>如何在PS中创建一个3D...</p>
-                    <div class="xin"></div>
-                    <div class="zan">
-                        <div class="zan1">
-                            <a href="javascript:;"></a>
-                            <span>26103</span>
-                        </div>
-                        <div class="zan2">
-                            <a href="javascript:;"></a>
-                            <span>26103</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="xian">
-                    <div class="dian"></div>
-                    <div class="dian1"></div>
-                </div>
-                <div class="imag"></div>
-            </div>
-
-        </div>
-    </div>
-    <div class="tuijian">
-        <div class="r-tuijian">
-            <div class="t-1">
-                <img src="../img/sc/tuijian2.png" alt="" id="imag">
-            </div>
-            <div class="ziti">
-                <div class="zi">
-                    <a href="javascript:;"></a>
-                    <span><strong>Designs</strong>Print</span>
-                </div>
-                <div class="xian">
-                    <div class="dian"></div>
-                    <div class="dian1"></div>
-                </div>
-                <div class="xing">
-                    <p>传统产品迭代过程,通常...</p>
-                    <div class="xin"></div>
-                    <div class="zan">
-                        <div class="zan1">
-                            <a href="javascript:;"></a>
-                            <span>26103</span>
-                        </div>
-                        <div class="zan2">
-                            <a href="javascript:;"></a>
-                            <span>26103</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="xian">
-                    <div class="dian"></div>
-                    <div class="dian1"></div>
-                </div>
-                <div class="imag"></div>
-            </div>
-
-        </div>
-        <div class="r-tuijian">
-            <div class="t-1">
-                <img src="../img/sc/tuijian3.png" alt="" id="image">
-            </div>
-            <div class="ziti">
-                <div class="zi">
-                    <a href="javascript:;"></a>
-                    <span><strong>Reindeer</strong>Home</span>
-                </div>
-                <div class="xian">
-                    <div class="dian"></div>
-                    <div class="dian1"></div>
-                </div>
-                <div class="xing">
-                    <p>设计构思是一个以旅游观...</p>
-                    <div class="xin"></div>
-                    <div class="zan">
-                        <div class="zan1">
-                            <a href="javascript:;"></a>
-                            <span>26103</span>
-                        </div>
-                        <div class="zan2">
-                            <a href="javascript:;"></a>
-                            <span>26103</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="xian">
-                    <div class="dian"></div>
-                    <div class="dian1"></div>
-                </div>
-                <div class="imag"></div>
-            </div>
-
-        </div>
-    </div>
-    <div class="jiaocheng">
-        <div class="tu"></div>
-        <a href="javascript:;"></a>
-    </div>
-    <div class="sc-play">
-        <div class="play-top">
-            <a href="javascript:;"></a>
-            <div class="play-right">
-                <div class="left-left">
-                    <p>lind.<strong>maral</strong></p>
-                    <div class="xian"></div>
-                    <p>色彩游戏-双重影像的三种玩法</p>
-                </div>
-                <div class="left-right">
+                <div class="play-center">
                     <div class="tu"></div>
-                    <div class="zan">
-                        <div class="zan1">
-                            <a href="javascript:;"></a>
-                            <span>1223</span>
+                    <div class="zi">
+                        <div class="zi-1">
+                            <span class="youxi"><strong>色彩</strong>游戏</span>
+                            <span><strong>Colour</strong>game</span>
                         </div>
-                        <div class="zan2">
+                        <div class="xian1"></div>
+                        <p>万物之间总有那么一丝一毫的形象之间的联系...</p>
+                        <div class="xian2"></div>
+                        <div class="spans">
+                            <span class="jiacu">6439</span>
+                            <span>THUMB UP</span>
                             <a href="javascript:;"></a>
-                            <span>4326</span>
                         </div>
+
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="xian">
-            <div class="left"></div>
-            <div class="right"></div>
-        </div>
-        <div class="play-center">
-            <div class="tu"></div>
-            <div class="zi">
-                <div class="zi-1">
-                    <span class="youxi"><strong>色彩</strong>游戏</span>
-                    <span><strong>Colour</strong>game</span>
-                </div>
-                <div class="xian1"></div>
-                <p>万物之间总有那么一丝一毫的形象之间的联系...</p>
-                <div class="xian2"></div>
-                <div class="spans">
-                    <span class="jiacu">6439</span>
-                    <span>THUMB UP</span>
+            <div class="sc-play play-2">
+                <div class="play-top">
                     <a href="javascript:;"></a>
+                    <div class="play-right">
+                        <div class="left-left">
+                            <p>lind.<strong>maral</strong></p>
+                            <div class="xian"></div>
+                            <p>利用PS滤镜为人物增加流体效果</p>
+                        </div>
+                        <div class="left-right">
+                            <div class="tu"></div>
+                            <div class="zan">
+                                <div class="zan1">
+                                    <a href="javascript:;"></a>
+                                    <span>1223</span>
+                                </div>
+                                <div class="zan2">
+                                    <a href="javascript:;"></a>
+                                    <span>4326</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-            </div>
-        </div>
-    </div>
-    <div class="sc-play play-2">
-        <div class="play-top">
-            <a href="javascript:;"></a>
-            <div class="play-right">
-                <div class="left-left">
-                    <p>lind.<strong>maral</strong></p>
-                    <div class="xian"></div>
-                    <p>利用PS滤镜为人物增加流体效果</p>
+                <div class="xian">
+                    <div class="left"></div>
+                    <div class="right"></div>
                 </div>
-                <div class="left-right">
+                <div class="play-center">
                     <div class="tu"></div>
-                    <div class="zan">
-                        <div class="zan1">
-                            <a href="javascript:;"></a>
-                            <span>1223</span>
+                    <div class="zi">
+                        <div class="zi-1">
+                            <span class="youxi"><strong>PS</strong>滤镜</span>
+                            <span><strong>PS</strong>filters</span>
                         </div>
-                        <div class="zan2">
+                        <div class="xian1"></div>
+                        <p>Photoshop教程是给人物增加流体效果...</p>
+                        <div class="xian2"></div>
+                        <div class="spans">
+                            <span class="jiacu">6439</span>
+                            <span>THUMB UP</span>
                             <a href="javascript:;"></a>
-                            <span>4326</span>
                         </div>
+
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="xian">
-            <div class="left"></div>
-            <div class="right"></div>
-        </div>
-        <div class="play-center">
-            <div class="tu"></div>
-            <div class="zi">
-                <div class="zi-1">
-                    <span class="youxi"><strong>PS</strong>滤镜</span>
-                    <span><strong>PS</strong>filters</span>
-                </div>
-                <div class="xian1"></div>
-                <p>Photoshop教程是给人物增加流体效果...</p>
-                <div class="xian2"></div>
-                <div class="spans">
-                    <span class="jiacu">6439</span>
-                    <span>THUMB UP</span>
-                    <a href="javascript:;"></a>
-                </div>
-
-            </div>
+            <!--底部图-->
+            <div class="cen-di"></div>
         </div>
     </div>
-    <div class="cen-di"></div>
-    <div class="bottom">
+
+    <div class="bottom" id="footer">
         <div><a href="javascript:;" class="a1"></a></div>
         <div><a href="javascript:;" class="a2"></a></div>
         <div><a href="javascript:;" class="a3"></a></div>
@@ -398,4 +408,11 @@
     galleryTop.params.control = galleryThumbs;
     galleryThumbs.params.control = galleryTop;
 
+    window.onload=function(){
+        var myScroll = new IScroll('#wrapper', {
+            mouseWheel: true,
+            scrollbars: true,
+            click:true
+        });
+    }
 </script>
